@@ -13,7 +13,7 @@
 #define LIQ_EXPORT extern
 #endif
 
-#define LIQ_VERSION 21200
+#define LIQ_VERSION 21202
 #define LIQ_VERSION_STRING "2.12.2"
 
 #ifndef LIQ_PRIVATE
