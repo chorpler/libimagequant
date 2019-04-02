@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/imagequant.dir/objects.a
+x86_64-w64-mingw32-ar cr CMakeFiles/imagequant.dir/objects.a @CMakeFiles/imagequant.dir/objects1.rsp
+/usr/bin/x86_64-w64-mingw32-gcc   -fopenmp  -shared -o libimagequant.dll -Wl,--out-implib,libimagequant.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles/imagequant.dir/objects.a -Wl,--no-whole-archive @CMakeFiles/imagequant.dir/linklibs.rsp

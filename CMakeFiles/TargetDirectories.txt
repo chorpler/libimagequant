@@ -1,0 +1,3 @@
+/code/forks/libimagequant/CMakeFiles/rebuild_cache.dir
+/code/forks/libimagequant/CMakeFiles/imagequant.dir
+/code/forks/libimagequant/CMakeFiles/edit_cache.dir
