@@ -1,3 +1,5 @@
+THIS_FILE := $(lastword $(MAKEFILE_LIST))
+
 -include config.mk
 
 STATICLIB=libimagequant.a
@@ -132,8 +134,11 @@ ifeq ($(filter %clean %distclean, $(MAKECMDGOALS)), )
 	./configure
 endif
 
+list:
+	@$(MAKE) -pRrq -f $(lastword $(THIS_FILE)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
+
 $(PKGCONFIG): config.mk
 	sed 's|PREFIX|$(PREFIX)|;s|VERSION|$(VERSION)|' < imagequant.pc.in > $(PKGCONFIG)
 
-.PHONY: all static shared clean dist distclean dll java cargo
+.PHONY: all static shared clean dist distclean dll java cargo list
 .DELETE_ON_ERROR:
