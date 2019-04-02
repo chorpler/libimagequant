@@ -1,0 +1,31 @@
+[[package]]
+name = "cc"
+version = "1.0.32"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "imagequant-sys"
+version = "2.12.2"
+dependencies = [
+ "cc 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
+ "openmp-sys 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rgb 0.8.13 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "openmp-sys"
+version = "0.1.6"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "cc 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rgb"
+version = "0.8.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[metadata]
+"checksum cc 1.0.32 (registry+https://github.com/rust-lang/crates.io-index)" = "ad0daef304fa0b4238f5f7ed7178774b43b06f6a9b6509f6642bef4ff1f7b9b2"
+"checksum openmp-sys 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)" = "60a5c0c0eae12a4db51e0d1d461687a873b154940d25e8e060db16e308cbe4da"
+"checksum rgb 0.8.13 (registry+https://github.com/rust-lang/crates.io-index)" = "4f089652ca87f5a82a62935ec6172a534066c7b97be003cc8f702ee9a7a59c92"
